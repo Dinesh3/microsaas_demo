@@ -1,0 +1,19 @@
+# Backend
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.db
+backend/.env
+backend/venv/
+backend/.venv/
+*.pyc
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# OS
+.DS_Store
+
+# Archives
+microsaas_demo-1.zip

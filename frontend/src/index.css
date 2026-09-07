@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-canvas text-ink font-body antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+::selection {
+  background-color: #C08A3E33;
+}
+
+.blueprint-rule {
+  background-image: repeating-linear-gradient(
+    to right,
+    #12232E14 0px,
+    #12232E14 1px,
+    transparent 1px,
+    transparent 8px
+  );
+  height: 1px;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #C08A3E;
+  outline-offset: 2px;
+}

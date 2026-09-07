@@ -1,0 +1,14 @@
+# Optional: run the backend in Docker. The frontend is meant to be run with
+# `npm run dev` locally (Vite dev server), or built and served separately.
+#
+# Usage: docker compose up --build
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend:/app
